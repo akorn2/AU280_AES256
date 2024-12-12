@@ -1,0 +1,57 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/24/2024 07:16:33 PM
+// Design Name: 
+// Module Name: AES_Extractor_tb
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module AES_Extractor_tb;
+reg clk;
+reg execute;
+wire pending;
+wire [2047:0] ans;
+wire [2047:0] exp;
+reg [2047:0] secret;
+reg enable;
+wire [127:0] rando;
+
+assign exp = 2048'h26361228986984c950551317f213ca86e366ce3fe8a4d36b70fe5cded79ca6f7b773aacc884f6d11fed1e5935dc49cc7462d90b9ef925ab8811b1794727903cf6e5182cb2a3ed78b124af0ea9802947cf4301493fe78e14837ecdd01bf61e7d9c6439c7dc8d80e1b6b56d5a74129aa5a16dbcafd28343d97690229d9452f798dd5b341336bf11d944b2443916cf3da94e67b0e51133c68ce060c1ce78ee0d2b72ecceab4c37d81570a9c29db9ad88f9c636d6ece664ff4ef83aa1305d0e722d5bacb3a1ae53ab131175e43968d49ab7abf1be21159b901b5016a4db92801a713751b5053a2fd1cf8776250f3394e054352a68343783210a02f9977e086a30792;
+realtime start_enc;
+realtime end_enc;
+realtime end_dec;
+
+AES_Extractor #(16) exe(secret, enable, ans);
+AES_Encrypt #(256, 14, 8) tester(secret[2047:(2048-128)], 256'h576F7264734D65616E696E676C65737341735769636B6564416E64437275656C,rando); 
+
+initial begin
+    clk = 1;
+    enable = 0;
+    execute = 0;
+    start_enc = 0;
+    end_enc = 0;
+    end_dec = 0;
+    secret = 2048'h0;//2048'h0123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba98765432100123456789abcdef0123456789abcdeffedcba9876543210fedcba9876543210;
+    #100;
+    start_enc = $realtime;
+    secret = 2048'h44616E6E792052656E73636820616E64204C65767920526F7A6D616E206172652074686520626573742070656F706C652049206B6E6F772E20427574207265616C6C7920616C6C2049206E65656420746F20646F20697320746F2070726F7669646520612062756E6368206F662072616E646F6D207465787420616E6420636861726163746572732C206C696B6520746869733A203F2A2121212A3F2E20596F7520776572656E277420657870656374696E672061206E6F726D616C2073656E74656E63652C207765726520796F753F20497427732061207465737420616E6420696E2041534349492049206E6565642032353620636861726163746572732E;
+    wait(ans[2047]==rando[127] && ans[(2048-128)]==rando[0]) end_enc = $realtime;
+    $display(end_enc-start_enc);
+    #100;
+    enable = 1;
+end
+endmodule

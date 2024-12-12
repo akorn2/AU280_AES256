@@ -1,0 +1,17 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.959425",
+   "Default View_TopLeft":"-464,334",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port pcie_7x_mgt_rtl_0 -pg 1 -lvl 3 -x 120 -y 200 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x -120 -y 610 -defaultsOSRD
+levelinfo -pg 1 -330 -120 80 120
+pagesize -pg 1 -db -bbox -sgen -450 -170 530 820
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"2"
+}
