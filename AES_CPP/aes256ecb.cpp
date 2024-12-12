@@ -11,7 +11,8 @@
 #include <iomanip>
 
 #define SECRET_KEY "WordsMeaninglessAsWickedAndCruel"
-#define VALUE "Danny Rensch and"
+//#define VALUE "Danny Rensch and"
+#define VALUE "Danny Rensch and Levy Rozman are the best people I know. But really all I need to do is to provide a bunch of random text and characters, like this: ?*!!!*?. You weren't expecting a normal sentence, were you? It's a test and in ASCII I need 256 characters."
 
 class Crypto {
 private:
@@ -62,7 +63,7 @@ int main() {
     std::cout << ">>>>>>>>>>>>>>>>>>" << std::endl;
 
     Crypto crypto;
-
+	//change code 2 lines down to SHORT_VALUE for 
     // Encryption
     std::chrono::high_resolution_clock::time_point enc_start = std::chrono::high_resolution_clock::now();
     std::vector<unsigned char> encrypted_data = crypto.encrypt(VALUE);
