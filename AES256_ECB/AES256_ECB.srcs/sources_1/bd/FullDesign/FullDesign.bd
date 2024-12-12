@@ -1,0 +1,50 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xcu280-fsvh2892-2L-e",
+      "gen_directory": "../../../../AES256_ECB.gen/sources_1/bd/FullDesign",
+      "name": "FullDesign",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "clk_wiz": ""
+    },
+    "interface_ports": {
+      "pcie_7x_mgt_rtl_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie_7x_mgt:1.0",
+        "vlnv": "xilinx.com:interface:pcie_7x_mgt_rtl:1.0",
+        "port_maps": {
+          "rxn": {
+            "physical_name": "pcie_7x_mgt_rtl_0_rxn",
+            "direction": "I"
+          },
+          "rxp": {
+            "physical_name": "pcie_7x_mgt_rtl_0_rxp",
+            "direction": "I"
+          },
+          "txn": {
+            "physical_name": "pcie_7x_mgt_rtl_0_txn",
+            "direction": "O"
+          },
+          "txp": {
+            "physical_name": "pcie_7x_mgt_rtl_0_txp",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
+        "xci_name": "FullDesign_clk_wiz_0",
+        "xci_path": "ip\\FullDesign_clk_wiz_0\\FullDesign_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz"
+      }
+    }
+  }
+}

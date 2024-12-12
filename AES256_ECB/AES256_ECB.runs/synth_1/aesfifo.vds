@@ -1,0 +1,969 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Dec 12 07:20:43 2024
+# Process ID: 28052
+# Current directory: C:/Xilinx/Projects/AES256_ECB/AES256_ECB.runs/synth_1
+# Command line: vivado.exe -log aesfifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aesfifo.tcl
+# Log file: C:/Xilinx/Projects/AES256_ECB/AES256_ECB.runs/synth_1/aesfifo.vds
+# Journal file: C:/Xilinx/Projects/AES256_ECB/AES256_ECB.runs/synth_1\vivado.jou
+# Running On: Korntop1, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16931 MB
+#-----------------------------------------------------------
+source aesfifo.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 477.383 ; gain = 181.590
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/akorn/AppData/Roaming/Xilinx/ip_repo_eth_controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/akorn/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Projects/project_1/project_1.srcs/sources_1/imports/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/utils_1/imports/synth_1/AES_EX_Extractor.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/utils_1/imports/synth_1/AES_EX_Extractor.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top aesfifo -part xcu280-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2386.449 ; gain = 433.594
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'odata' is not allowed [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/new/aesfifo.v:117]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_00112233445566778899aabbccddeeff' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES.v:12]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES.v:17]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_0b0bfa882c3df2f57aff3fd9601ef4ce' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES.v:22]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_046681e5_e0cb199a_48f8d37a_2806264c' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/addRoundKey_tb.v:13]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_a0fafe17_88542cb1_23a33939_2a6c7605' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/addRoundKey_tb.v:14]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_7ad5fda789ef4e272bca100b3d9ff59f' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseShiftRows_tb.v:12]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_00010203_04050607_08090a0b_0c0d0e0f_10111213_14151617' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/keyExpansion_tb.v:15]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_d4bf5d30_e0b452ae_b84111f1_1e2798e5' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/mixColumns_tb.v:12]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_84e1dd69_1a41d76f_792d3897_83fbac70' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/mixColumns_tb.v:14]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_6353e08c_0960e104_cd70b751_bacad0e7' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/mixColumns_tb.v:16]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_d42711ae_e0bf98f1_b8b45de5_1e415230' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/shiftRows_tb.v:12]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_49ded289_45db96f1_7f39871a_7702533b' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/shiftRows_tb.v:14]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_ac73cf7b_efc111df_13b5d6b5_45235ab8' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/shiftRows_tb.v:16]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_193de3be_a0f4e22b_9ac68d2a_e9f84808' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/subBytes_tb.v:9]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_a49c7ff2_689f352b_6b5bea43_026a5049' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/subBytes_tb.v:11]
+WARNING: [Synth 8-10835] illegal leading underscore character in based number '_aa8f5f03_61dde3ef_82d24ad2_6832469a' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/subBytes_tb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'aesfifo' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/new/aesfifo.v:111]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES_Encrypt.v:4]
+	Parameter N bound to: 256 - type: integer 
+	Parameter Nr bound to: 14 - type: integer 
+	Parameter Nk bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'encryptRound' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/encryptRound.v:1]
+INFO: [Synth 8-6157] synthesizing module 'subBytes' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/subBytes.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/sbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/sbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'subBytes' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/subBytes.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shiftRows' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/shiftRows.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shiftRows' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/shiftRows.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mixColumns' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/mixColumns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mixColumns' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/mixColumns.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addRoundKey' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/addRoundKey.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'addRoundKey' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/addRoundKey.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'encryptRound' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/encryptRound.v:1]
+INFO: [Synth 8-6157] synthesizing module 'keyExpansion' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/keyExpansion.v:1]
+	Parameter nk bound to: 8 - type: integer 
+	Parameter nr bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'keyExpansion' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/keyExpansion.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES_Encrypt.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AES_Decrypt' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES_Decrypt.v:1]
+	Parameter N bound to: 256 - type: integer 
+	Parameter Nr bound to: 14 - type: integer 
+	Parameter Nk bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'decryptRound' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/decryptRound.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inverseShiftRows' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseShiftRows.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inverseShiftRows' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseShiftRows.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inverseSubBytes' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseSubBytes.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inverseSbox' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseSbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inverseSbox' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseSbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inverseSubBytes' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseSubBytes.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inverseMixColumns' [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:1]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[0].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[1].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[2].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:16]
+WARNING: [Synth 8-6104] Input port 'm_col[3].x' has an internal driver [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'inverseMixColumns' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/inverseMixColumns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decryptRound' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/decryptRound.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Decrypt' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/imports/sources_1/imports/AES-Verilog-main/AES_Decrypt.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aesfifo' (0#1) [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/sources_1/new/aesfifo.v:111]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2577.199 ; gain = 624.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2577.199 ; gain = 624.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2577.199 ; gain = 624.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.578 . Memory (MB): peak = 2577.199 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-cons.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aesfifo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aesfifo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-enc-cons.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-enc-cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-enc-cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aesfifo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aesfifo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-sim.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-sim.xdc:1]
+Finished Parsing XDC File [C:/Xilinx/Projects/AES256_ECB/AES256_ECB.srcs/constrs_1/imports/new/alveo-u280-sim.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2760.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2760.719 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2760.719 ; gain = 807.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2760.719 ; gain = 807.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2760.719 ; gain = 807.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2760.719 ; gain = 807.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 30    
+	   3 Input     32 Bit         XORs := 14    
+	   2 Input     32 Bit         XORs := 90    
+	   2 Input      8 Bit         XORs := 1157  
+	   4 Input      8 Bit         XORs := 52    
+	   3 Input      8 Bit         XORs := 143   
+	   9 Input      8 Bit         XORs := 52    
+	   6 Input      8 Bit         XORs := 65    
+	   8 Input      8 Bit         XORs := 65    
+	   7 Input      8 Bit         XORs := 13    
+	   5 Input      8 Bit         XORs := 91    
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 832   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:24 ; elapsed = 00:06:33 . Memory (MB): peak = 3144.828 ; gain = 1191.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+--------------------------+---------------+----------------+
+|Module Name     | RTL Object               | Depth x Width | Implemented As | 
++----------------+--------------------------+---------------+----------------+
+|sbox            | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|inverseSbox     | sbout                    | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[0].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[8].s/sbout   | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[16].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[24].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[32].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[40].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[48].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[56].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[64].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[72].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[80].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[88].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[96].s/sbout  | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[104].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[112].s/sbout | 256x8         | LUT            | 
+|decryptRound    | s/sub_Bytes[120].s/sbout | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[0].s/sbout     | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[8].s/sbout     | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[16].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[24].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[32].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[40].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[48].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[56].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[64].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[72].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[80].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[88].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[96].s/sbout    | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[104].s/sbout   | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[112].s/sbout   | 256x8         | LUT            | 
+|inverseSubBytes | sub_Bytes[120].s/sbout   | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[0].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[8].s/c       | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[16].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[24].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[32].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[40].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[48].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[56].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[64].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[72].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[80].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[88].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[96].s/c      | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[104].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[112].s/c     | 256x8         | LUT            | 
+|encryptRound    | s/sub_Bytes[120].s/c     | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|keyExpansion    | c                        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[0].s/c         | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[8].s/c         | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[16].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[24].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[32].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[40].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[48].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[56].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[64].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[72].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[80].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[88].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[96].s/c        | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[104].s/c       | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[112].s/c       | 256x8         | LUT            | 
+|subBytes        | sub_Bytes[120].s/c       | 256x8         | LUT            | 
++----------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:35 ; elapsed = 00:06:48 . Memory (MB): peak = 3304.934 ; gain = 1352.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:42 ; elapsed = 00:06:55 . Memory (MB): peak = 3365.473 ; gain = 1412.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:53 ; elapsed = 00:07:07 . Memory (MB): peak = 3458.316 ; gain = 1505.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:56 ; elapsed = 00:07:14 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:56 ; elapsed = 00:07:14 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:00 ; elapsed = 00:07:18 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:04 ; elapsed = 00:07:22 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:05 ; elapsed = 00:07:23 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:05 ; elapsed = 00:07:23 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     2|
+|3     |LUT2  |  1298|
+|4     |LUT3  |   258|
+|5     |LUT4  |   663|
+|6     |LUT5  |  1675|
+|7     |LUT6  | 20351|
+|8     |MUXF7 |  3145|
+|9     |MUXF8 |  1178|
+|10    |FDCE  |   129|
+|11    |IBUF  |   130|
+|12    |OBUF  |   128|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:05 ; elapsed = 00:07:23 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:49 ; elapsed = 00:07:16 . Memory (MB): peak = 3468.539 ; gain = 1332.164
+Synthesis Optimization Complete : Time (s): cpu = 00:06:05 ; elapsed = 00:07:27 . Memory (MB): peak = 3468.539 ; gain = 1515.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.496 . Memory (MB): peak = 3484.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4454 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3528.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 130 instances
+
+Synth Design complete | Checksum: 2411a274
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:21 ; elapsed = 00:07:47 . Memory (MB): peak = 3528.582 ; gain = 3038.402
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 3528.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/AES256_ECB/AES256_ECB.runs/synth_1/aesfifo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aesfifo_utilization_synth.rpt -pb aesfifo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 07:28:42 2024...
